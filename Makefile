@@ -16,5 +16,8 @@ download:
 tidy:
 	go mod tidy
 
+test-create:
+	curl -iL -X POST http://localhost:4000/snippet/create
+
 PHONY:
-	run help mysql verify download tidy
+	run help mysql verify download tidy test-create
