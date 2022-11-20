@@ -29,3 +29,5 @@ func (m *SnippetModel) Get(id int) (*Snippet, error) {
 func (m *SnippetModel) Latest() ([]*Snippet, error) {
 	return nil, nil
 }
+
+// page 102
