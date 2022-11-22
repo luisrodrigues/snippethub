@@ -12,6 +12,5 @@ func (app *application) routes() http.Handler {
 	mux.HandleFunc("/snippet/view", app.snippetView)
 	mux.HandleFunc("/snippet/create", app.snippetCreate)
 
-	// there is a bug if app.logRequest(secureHeaders(mux))
-	return secureHeaders(mux)
+	return app.logRequest(secureHeaders(mux))
 }
