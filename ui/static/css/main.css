@@ -1,9 +1,15 @@
+:root {
+    --black: #000000;
+    --grey: #34495E;
+    --white: #F1F3F6;
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 18px;
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "Jetbrains Mono", monospace;
 }
 
 html, body {
@@ -12,8 +18,8 @@ html, body {
 
 body {
     line-height: 1.5;
-    background-color: #F1F3F6;
-    color: #34495E;
+    color: var(--white);
+    background-color: var(--grey);
     overflow-y: scroll;
 }
 
@@ -31,7 +37,6 @@ main {
 h1 a {
     font-size: 36px;
     font-weight: bold;
-    background-image: url("/static/img/logo.png");
     background-repeat: no-repeat;
     background-position: 0px 0px;
     height: 36px;
@@ -41,7 +46,7 @@ h1 a {
 
 h1 a:hover {
     text-decoration: none;
-    color: #34495E;
+    color: var(--white);
 }
 
 h2 {
@@ -52,12 +57,12 @@ h2 {
 }
 
 a {
-    color: #62CB31;
+    color: var(--white);
     text-decoration: none;
 }
 
 a:hover {
-    color: #4EB722;
+    color: var(--white);
     text-decoration: underline;
 }
 
@@ -67,13 +72,9 @@ textarea, input:not([type="submit"]) {
 }
 
 header {
-    background-image: -webkit-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
-    background-image: -moz-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
-    background-image: -ms-linear-gradient(left, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
-    background-image: linear-gradient(to right, #34495e, #34495e 25%, #9b59b6 25%, #9b59b6 35%, #3498db 35%, #3498db 45%, #62cb31 45%, #62cb31 55%, #ffb606 55%, #ffb606 65%, #e67e22 65%, #e67e22 75%, #e74c3c 85%, #e74c3c 85%, #c0392b 85%, #c0392b 100%);
     background-size: 100% 6px;
     background-repeat: no-repeat;
-    border-bottom: 1px solid #E4E5E7;
+    border-bottom: 1px solid var(--white);
     overflow: auto;
     padding-top: 33px;
     padding-bottom: 27px;
@@ -81,17 +82,17 @@ header {
 }
 
 header a {
-    color: #34495E;
+    color: var(--white);
     text-decoration: none;
 }
 
 nav {
-    border-bottom: 1px solid #E4E5E7;
+    border-bottom: 1px solid var(--grey);
     padding-top: 17px;
     padding-bottom: 15px;
-    background: #F7F9FA;
+    background: var(--grey);
     height: 60px;
-    color: #6A6C6F;
+    color: var(--white);
 }
 
 nav a {
@@ -119,7 +120,7 @@ nav div:last-child a {
 }
 
 nav a.live {
-    color: #34495E;
+    color: var(--white);
     cursor: default;
 }
 
@@ -135,17 +136,17 @@ nav a.live:after {
     top: 9px;
     width: 14px;
     height: 14px;
-    background: #F7F9FA;
-    border-left: 1px solid #E4E5E7;
-    border-bottom: 1px solid #E4E5E7;
+    background: var(--black);
+    border-left: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(-45deg);
 }
 
 a.button, input[type="submit"] {
-    background-color: #62CB31;
+    background-color: var(--black);
     border-radius: 3px;
-    color: #FFFFFF;
+    color: var(--grey);
     padding: 18px 27px;
     border: none;
     display: inline-block;
@@ -154,8 +155,8 @@ a.button, input[type="submit"] {
 }
 
 a.button:hover, input[type="submit"]:hover {
-    background-color: #4EB722;
-    color: #FFFFFF;
+    background-color: var(--black);
+    color: var(--grey);
     cursor: pointer;
     text-decoration: none;
 }
@@ -165,7 +166,7 @@ form div {
 }
 
 form div:last-child {
-    border-top: 1px dashed #E4E5E7;
+    border-top: 1px dashed var(--grey);
 }
 
 form input[type="radio"] {
@@ -178,9 +179,9 @@ form input[type="text"], form input[type="password"], form input[type="email"] {
 }
 
 form input[type=text], form input[type="password"], form input[type="email"], textarea {
-    color: #6A6C6F;
-    background: #FFFFFF;
-    border: 1px solid #E4E5E7;
+    color: var(--white);
+    background: var(--grey);
+    border: 1px solid var(--grey);
     border-radius: 3px;
 }
 
@@ -210,31 +211,31 @@ button {
     background: none;
     padding: 0;
     border: none;
-    color: #62CB31;
+    color: var(--black);
     text-decoration: none;
 }
 
 button:hover {
-    color: #4EB722;
+    color: var(--black);
     text-decoration: underline;
     cursor: pointer;
 }
 
 .snippet {
-    background-color: #FFFFFF;
-    border: 1px solid #E4E5E7;
+    background-color: var(--grey);
+    border: 1px solid var(--grey);
     border-radius: 3px;
 }
 
 .snippet pre {
     padding: 18px;
-    border-top: 1px solid #E4E5E7;
-    border-bottom: 1px solid #E4E5E7;
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
 }
 
 .snippet .metadata {
-    background-color: #F7F9FA;
-    color: #6A6C6F;
+    background-color: var(--grey);
+    color: var(--white);
     padding: 0.75em 18px;
     overflow: auto;
 }
@@ -244,7 +245,7 @@ button:hover {
 }
 
 .snippet .metadata strong {
-    color: #34495E;
+    color: var(--white);
 }
 
 .snippet .metadata time {
@@ -260,16 +261,16 @@ button:hover {
 }
 
 div.flash {
-    color: #FFFFFF;
+    color: var(--grey);
     font-weight: bold;
-    background-color: #34495E;
+    background-color: var(--white);
     padding: 18px;
     margin-bottom: 36px;
     text-align: center;
 }
 
 div.error {
-    color: #FFFFFF;
+    color: var(--grey);
     background-color: #C0392B;
     padding: 18px;
     margin-bottom: 36px;
@@ -278,8 +279,8 @@ div.error {
 }
 
 table {
-    background: white;
-    border: 1px solid #E4E5E7;
+    background: var(--grey);
+    border: 1px solid var(--grey);
     border-collapse: collapse;
     width: 100%;
 }
@@ -291,23 +292,23 @@ td, th {
 
 th:last-child, td:last-child {
     text-align: right;
-    color: #6A6C6F;
+    color: var(--white);
 }
 
 tr {
-    border-bottom: 1px solid #E4E5E7;
+    border-bottom: 1px solid var(--grey);
 }
 
 tr:nth-child(2n) {
-    background-color: #F7F9FA;
+    background-color: var(--grey);
 }
 
 footer {
-    border-top: 1px solid #E4E5E7;
+    border-top: 1px solid var(--grey);
     padding-top: 17px;
     padding-bottom: 15px;
-    background: #F7F9FA;
+    background: var(--grey);
     height: 60px;
-    color: #6A6C6F;
+    color: var(--white);
     text-align: center;
 }
