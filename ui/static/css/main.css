@@ -87,10 +87,10 @@ header a {
 }
 
 nav {
-    border-bottom: 1px solid var(--grey);
+    border-bottom: 1px solid var(--white);
     padding-top: 17px;
     padding-bottom: 15px;
-    background: var(--grey);
+    background: var(--black);
     height: 60px;
     color: var(--white);
 }
@@ -137,8 +137,8 @@ nav a.live:after {
     width: 14px;
     height: 14px;
     background: var(--black);
-    border-left: 1px solid var(--grey);
-    border-bottom: 1px solid var(--grey);
+    border-left: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(-45deg);
 }
@@ -146,7 +146,7 @@ nav a.live:after {
 a.button, input[type="submit"] {
     background-color: var(--black);
     border-radius: 3px;
-    color: var(--grey);
+    color: var(--white);
     padding: 18px 27px;
     border: none;
     display: inline-block;
@@ -156,7 +156,7 @@ a.button, input[type="submit"] {
 
 a.button:hover, input[type="submit"]:hover {
     background-color: var(--black);
-    color: var(--grey);
+    color: var(--white);
     cursor: pointer;
     text-decoration: none;
 }
@@ -179,9 +179,9 @@ form input[type="text"], form input[type="password"], form input[type="email"] {
 }
 
 form input[type=text], form input[type="password"], form input[type="email"], textarea {
-    color: var(--white);
-    background: var(--grey);
-    border: 1px solid var(--grey);
+    color: var(--black);
+    background: var(--white);
+    border: 1px solid var(--black);
     border-radius: 3px;
 }
 
@@ -222,8 +222,8 @@ button:hover {
 }
 
 .snippet {
-    background-color: var(--grey);
-    border: 1px solid var(--grey);
+    background-color: var(--black);
+    border: 1px solid var(--black);
     border-radius: 3px;
 }
 
@@ -279,8 +279,8 @@ div.error {
 }
 
 table {
-    background: var(--grey);
-    border: 1px solid var(--grey);
+    background: var(--black);
+    border: 1px solid var(--black);
     border-collapse: collapse;
     width: 100%;
 }
@@ -296,7 +296,7 @@ th:last-child, td:last-child {
 }
 
 tr {
-    border-bottom: 1px solid var(--grey);
+    border-bottom: 1px solid var(--black);
 }
 
 tr:nth-child(2n) {
