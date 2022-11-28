@@ -18,6 +18,9 @@
     </header>
     {{template "nav" .}}
     <main>
+        {{with .Flash}}
+            <div class='flash'>{{.}}</div>
+        {{end}}
         {{template "main" .}}
     </main>
     <footer>Made with 🤍 & <a href='https://golang.org/'>Golang</a> in {{.CurrentYear}}</footer>

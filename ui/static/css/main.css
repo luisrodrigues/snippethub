@@ -261,9 +261,9 @@ button:hover {
 }
 
 div.flash {
-    color: var(--grey);
+    color: var(--white);
     font-weight: bold;
-    background-color: var(--white);
+    background-color: var(--black);
     padding: 18px;
     margin-bottom: 36px;
     text-align: center;
