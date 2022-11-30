@@ -20,6 +20,7 @@ Simple fullstack project to learn Go. The goal is to build a website like pasteb
 ## Setup (todo)
 - Create `"snippets" table`
 - Create `"sessions" table`
+- Create `"users" table`
 
 ### MySQL
 ### TLS
