@@ -19,3 +19,4 @@ go.work
 
 #security
 /tls
+.DS_Store

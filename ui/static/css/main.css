@@ -211,12 +211,12 @@ button {
     background: none;
     padding: 0;
     border: none;
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
 }
 
 button:hover {
-    color: var(--black);
+    color: var(--white);
     text-decoration: underline;
     cursor: pointer;
 }
