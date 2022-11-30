@@ -2,6 +2,7 @@
     --black: #000000;
     --grey: #34495E;
     --white: #F1F3F6;
+    --red: #FF0000;
   }
 
 * {
@@ -191,13 +192,13 @@ form label {
 }
 
 .error {
-    color: #C0392B;
+    color: var(--red);
     font-weight: bold;
     display: block;
 }
 
 .error + textarea, .error + input {
-    border-color: #C0392B !important;
+    border-color: var(--red) !important;
     border-width: 2px !important;
 }
 
@@ -271,7 +272,7 @@ div.flash {
 
 div.error {
     color: var(--grey);
-    background-color: #C0392B;
+    background-color: var(--red);
     padding: 18px;
     margin-bottom: 36px;
     font-weight: bold;
