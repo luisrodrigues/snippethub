@@ -271,7 +271,7 @@ div.flash {
 }
 
 div.error {
-    color: var(--grey);
+    color: var(--gre--white);
     background-color: var(--red);
     padding: 18px;
     margin-bottom: 36px;
