@@ -18,5 +18,6 @@
 go.work
 
 #security
-/tls
+tls
+.idea
 .DS_Store
