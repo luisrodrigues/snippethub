@@ -20,4 +20,5 @@ go.work
 #security
 tls
 .idea
+tmp
 .DS_Store
