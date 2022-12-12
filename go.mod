@@ -16,4 +16,7 @@ require (
 
 require golang.org/x/crypto v0.3.0
 
-require github.com/justinas/nosurf v1.1.1
+require (
+	github.com/go-playground/assert/v2 v2.0.1
+	github.com/justinas/nosurf v1.1.1
+)
