@@ -22,5 +22,11 @@ test-create:
 test:
 	go test -v ./...
 
+test-cover:
+	go test -covermode=count -coverprofile=/tmp/profile.out ./...
+
+test-report:
+	go tool cover -html=/tmp/profile.out
+
 PHONY:
-	run help mysql verify download tidy test-create test
+	run help mysql verify download tidy test-create test test-cover test-report
