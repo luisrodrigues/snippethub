@@ -19,5 +19,14 @@ tidy:
 test-create:
 	curl -iL -X POST http://localhost:4000/snippet/create
 
+test:
+	go test -v ./...
+
+test-cover:
+	go test -covermode=count -coverprofile=/tmp/profile.out ./...
+
+test-report:
+	go tool cover -html=/tmp/profile.out
+
 PHONY:
-	run help mysql verify download tidy test-create
+	run help mysql verify download tidy test-create test test-cover test-report
