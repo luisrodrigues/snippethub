@@ -1,5 +1,8 @@
 # SnippetHub
 Simple fullstack project to learn Go. The goal is to build a website like pastebin or such.
+
+Feel free to fork or copy the code and use it as a base for your own projects.
+
 ![homepage](/images/homepage.png "Snippethub homepage")
 ## Routes
 - TODO: auth routes
@@ -17,7 +20,8 @@ Simple fullstack project to learn Go. The goal is to build a website like pasteb
 | POST | /user/logout | userLogoutPost | Logout the user |
 | GET | /static/*filepath | http.FileServer | Serve a specific static file |
 
-## Setup (todo)
+## Setup
+### Local Setup
 - Create `"snippets" table`
 - Create `"sessions" table`
 - Create `"users" table`
@@ -29,7 +33,7 @@ Simple fullstack project to learn Go. The goal is to build a website like pasteb
 - `go run /usr/local/go/src/crypto/tls/generate_cert.go --rsa-bits=2048 --host=localhost`
 
 ### TODO
-- Tests!!!
-- Add dockerfile
-- Migrate to Postgres??
-- Code formatting/styles?
+- Tests: improve coverage;
+- Add dockerfile;
+- Migrate to Postgres;
+- TBD
