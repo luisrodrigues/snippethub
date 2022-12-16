@@ -105,6 +105,7 @@ Please check the commands with a `test-` prefix inside `Makefile`.
 
 ### TODO
 - Tests: improve coverage;
-- Add dockerfile + docker-compose to ease local setup
-- Migrate to Postgres before docker stuff
+- Improve project setup and config
+  - Add dockerfile + docker-compose to ease local setup
+- Maybe migrate to Postgres before docker stuff
 - TBD
